@@ -1,0 +1,90 @@
+print("Welcome to Ali Janah hospital patient billing and information system")
+print(input("what is your name?"))
+print(input("how old are you?"))
+print("Please specify your gender:")
+print("1.Male")
+print("2.Female")
+choice=input("Enter 1 or 2:")
+if choice=="1":
+    gender="Male"
+elif choice=="2":
+    gender="Female"
+else:
+    gender="invalid choice"
+print(f"Your gender is {gender}")
+print("what is your sickness kind:")
+print("3.Asthma")
+print("4.Heart disease")
+print("5.TB")
+print("6.Flu")
+print("7.COVID-19")
+print("8.Cancer")
+print("9.Anemia")
+print("10.Malaria")
+sickness_kind=input("Enter 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10:")
+if sickness_kind=="3":
+    sickness_kind="Asthma"
+elif sickness_kind=="4":
+    sickness_kind="Heart disease"
+elif sickness_kind=="5":
+    sickness_kind="TB"
+elif sickness_kind=="6":
+    sickness_kind="Flu"
+elif sickness_kind=="7":
+    sickness_kind="COVID-19"
+elif sickness_kind=="8":
+    sickness_kind="Cancer"
+elif sickness_kind=="9":
+    sickness_kind="Anemia"
+elif sickness_kind=="10":
+    sickness_kind="Malaria"
+else:
+    sickness_kind="invalid sickness kind"
+print(f"Your sickness kind is {sickness_kind}")
+print("what is your Doctor name:")
+print("11.Dr Abdullah")
+print("12. Dr Ali Shah")
+print("13. Dr Obid")
+Doctor_name=input("Enter 11 or 12 or 13:")
+if Doctor_name=="11":
+    Doctor_name="Dr Abdullah"
+elif Doctor_name=="12":
+    Doctor_name="Dr Ali Shah"
+elif Doctor_name=="13":
+    Doctor_name="Dr Obid"
+else:
+    Doctor_name="invalid Doctor name"
+print(f"your doctor name is {Doctor_name}")
+print("did you have any laboratory:")
+print("14.clinical laboratories")
+print("15.specialized laboratories ")
+print("16.blood laboratories")
+print("17.support and screening laboratories")
+laboratory_name=input("Enter 14 or 15 or 16 or 17:")
+if laboratory_name=="14":
+    laboratory_name="clinical laboratories"
+elif laboratory_name=="15":
+    laboratory_name="specialized laboratories"
+elif laboratory_name=="16":
+    laboratory_name="blood laboratories"
+elif laboratory_name=="17":
+    laboratory_name="support and screening laboratories"
+else:
+    laboratory_name="invalid laboratory name"
+print(f"your laboratory name is {laboratory_name}")
+doctor_bill=float(input("can you tell me your doctor bill price?$"))
+laboratory_bill=float(input("can you tell me your laboratory bill price?$"))
+print("what is your payment method:")
+print("22.card")
+print("33.cell phone")
+print("44.hand to hand")
+payment_method=input("Enter 22 or 33 or 44:")
+if payment_method=="22":
+    payment_method="card"
+elif payment_method=="33":
+    payment_method="cell phone"
+elif payment_method=="44":
+    payment_method="hand to hand"
+print(f"your payment method is {payment_method}")
+print(f"your payment price is {doctor_bill+laboratory_bill}")
+print("Thank you for selecting Ali Janah hospital")
